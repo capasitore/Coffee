@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="svj-yb-O5a">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
+        <!--Launch Controller-->
+        <scene sceneID="clm-BB-3qQ">
+            <objects>
+                <viewController id="svj-yb-O5a" customClass="LaunchController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Fj-7m-eIN"/>
+                        <viewControllerLayoutGuide type="bottom" id="XjY-cJ-EJb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wQw-cf-9Sh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTe-bg-WlD">
+                                <rect key="frame" x="246" y="270" width="108" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Perform Search"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="C4B-7o-wTe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DTe-bg-WlD" firstAttribute="centerX" secondItem="wQw-cf-9Sh" secondAttribute="centerX" id="eWm-64-59j"/>
+                            <constraint firstItem="DTe-bg-WlD" firstAttribute="top" secondItem="2Fj-7m-eIN" secondAttribute="bottom" constant="250" id="xfT-6Z-aQl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yef-zi-Kfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-533" y="477"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Coffee" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +49,38 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Puw-VW-HGI">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </mapView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dOd-hS-TtT">
+                                <rect key="frame" x="0.0" y="311" width="600" height="289"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Puw-VW-HGI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="12z-ck-qPa"/>
+                            <constraint firstAttribute="trailing" secondItem="dOd-hS-TtT" secondAttribute="trailing" id="4dE-h5-SVh"/>
+                            <constraint firstItem="dOd-hS-TtT" firstAttribute="height" secondItem="Puw-VW-HGI" secondAttribute="height" constant="-311" id="5F1-4n-AKH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dOd-hS-TtT" secondAttribute="bottom" id="IDV-Up-93Y"/>
+                            <constraint firstAttribute="trailing" secondItem="Puw-VW-HGI" secondAttribute="trailing" id="UbC-ga-5ks"/>
+                            <constraint firstItem="Puw-VW-HGI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Veo-W4-5kM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Puw-VW-HGI" secondAttribute="bottom" id="pdv-4g-Tq5"/>
+                            <constraint firstItem="dOd-hS-TtT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="w9v-h9-N3d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="Puw-VW-HGI" id="CIx-KT-pWr"/>
+                        <outlet property="tableView" destination="dOd-hS-TtT" id="Jkl-9q-Z60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="234" y="477"/>
         </scene>
     </scenes>
 </document>

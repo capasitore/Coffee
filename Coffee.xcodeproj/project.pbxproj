@@ -7,14 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CDCC7E615123BA9183802ADA /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A080D7A7B665DC06B20DAC /* Pods.framework */; };
 		E1DF82C91C15B2D8008AD1BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF82C81C15B2D8008AD1BC /* AppDelegate.swift */; };
 		E1DF82CB1C15B2D8008AD1BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DF82CA1C15B2D8008AD1BC /* ViewController.swift */; };
 		E1DF82CE1C15B2D8008AD1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DF82CC1C15B2D8008AD1BC /* Main.storyboard */; };
 		E1DF82D01C15B2D8008AD1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DF82CF1C15B2D8008AD1BC /* Assets.xcassets */; };
 		E1DF82D31C15B2D8008AD1BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1DF82D11C15B2D8008AD1BC /* LaunchScreen.storyboard */; };
+		E1DF82DB1C15B31C008AD1BC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = E1DF82DA1C15B31C008AD1BC /* Podfile */; };
+		E1E779631C172A7F00A93061 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E779621C172A7F00A93061 /* MapKit.framework */; };
+		E1E779651C17301300A93061 /* CoffeeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E779641C17301300A93061 /* CoffeeAPI.swift */; };
+		E1E779671C173CC900A93061 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E779661C173CC900A93061 /* Venue.swift */; };
+		E1E779691C1742AF00A93061 /* CoffeeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E779681C1742AF00A93061 /* CoffeeAnnotation.swift */; };
+		E1E7796B1C1774CE00A93061 /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E7796A1C1774CE00A93061 /* LaunchController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26A080D7A7B665DC06B20DAC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AE4C3C95A623834E6BFB8BC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4B878057ED0E061900451B11 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		E1DF82C51C15B2D8008AD1BC /* Coffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DF82C81C15B2D8008AD1BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1DF82CA1C15B2D8008AD1BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +32,12 @@
 		E1DF82CF1C15B2D8008AD1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1DF82D21C15B2D8008AD1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1DF82D41C15B2D8008AD1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1DF82DA1C15B31C008AD1BC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E1E779621C172A7F00A93061 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E1E779641C17301300A93061 /* CoffeeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeAPI.swift; sourceTree = "<group>"; };
+		E1E779661C173CC900A93061 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		E1E779681C1742AF00A93061 /* CoffeeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeAnnotation.swift; sourceTree = "<group>"; };
+		E1E7796A1C1774CE00A93061 /* LaunchController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1E779631C172A7F00A93061 /* MapKit.framework in Frameworks */,
+				CDCC7E615123BA9183802ADA /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08A6D6CC19CB1959EA17D93D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AE4C3C95A623834E6BFB8BC /* Pods.debug.xcconfig */,
+				4B878057ED0E061900451B11 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		224D780A0878D8F9FB3D0DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1E779621C172A7F00A93061 /* MapKit.framework */,
+				26A080D7A7B665DC06B20DAC /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1DF82BC1C15B2D8008AD1BC = {
 			isa = PBXGroup;
 			children = (
+				E1DF82DA1C15B31C008AD1BC /* Podfile */,
 				E1DF82C71C15B2D8008AD1BC /* Coffee */,
 				E1DF82C61C15B2D8008AD1BC /* Products */,
+				08A6D6CC19CB1959EA17D93D /* Pods */,
+				224D780A0878D8F9FB3D0DF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +99,10 @@
 				E1DF82CF1C15B2D8008AD1BC /* Assets.xcassets */,
 				E1DF82D11C15B2D8008AD1BC /* LaunchScreen.storyboard */,
 				E1DF82D41C15B2D8008AD1BC /* Info.plist */,
+				E1E779641C17301300A93061 /* CoffeeAPI.swift */,
+				E1E779661C173CC900A93061 /* Venue.swift */,
+				E1E779681C1742AF00A93061 /* CoffeeAnnotation.swift */,
+				E1E7796A1C1774CE00A93061 /* LaunchController.swift */,
 			);
 			path = Coffee;
 			sourceTree = "<group>";
@@ -71,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1DF82D71C15B2D8008AD1BC /* Build configuration list for PBXNativeTarget "Coffee" */;
 			buildPhases = (
+				EFDAB6D43A12A1A74754D9D9 /* Check Pods Manifest.lock */,
 				E1DF82C11C15B2D8008AD1BC /* Sources */,
 				E1DF82C21C15B2D8008AD1BC /* Frameworks */,
 				E1DF82C31C15B2D8008AD1BC /* Resources */,
+				97ED6B54942D076315CC2506 /* Embed Pods Frameworks */,
+				EC907C9831D836C6E30E27AF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,11 +170,60 @@
 			files = (
 				E1DF82D31C15B2D8008AD1BC /* LaunchScreen.storyboard in Resources */,
 				E1DF82D01C15B2D8008AD1BC /* Assets.xcassets in Resources */,
+				E1DF82DB1C15B31C008AD1BC /* Podfile in Resources */,
 				E1DF82CE1C15B2D8008AD1BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97ED6B54942D076315CC2506 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC907C9831D836C6E30E27AF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFDAB6D43A12A1A74754D9D9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E1DF82C11C15B2D8008AD1BC /* Sources */ = {
@@ -136,6 +231,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1DF82CB1C15B2D8008AD1BC /* ViewController.swift in Sources */,
+				E1E779691C1742AF00A93061 /* CoffeeAnnotation.swift in Sources */,
+				E1E779671C173CC900A93061 /* Venue.swift in Sources */,
+				E1E779651C17301300A93061 /* CoffeeAPI.swift in Sources */,
+				E1E7796B1C1774CE00A93061 /* LaunchController.swift in Sources */,
 				E1DF82C91C15B2D8008AD1BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +344,7 @@
 		};
 		E1DF82D81C15B2D8008AD1BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AE4C3C95A623834E6BFB8BC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Coffee/Info.plist;
@@ -256,6 +356,7 @@
 		};
 		E1DF82D91C15B2D8008AD1BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B878057ED0E061900451B11 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Coffee/Info.plist;
@@ -284,6 +385,7 @@
 				E1DF82D91C15B2D8008AD1BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
